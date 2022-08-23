@@ -36,7 +36,7 @@ int main(void) {
   second_left_node2 = insert_left_child_node_bt(first_left_node, node); // F
 
   node.data = 46;
-  second_right_node2 = insert_right_child_node_bt(first_right_node; // G
+  second_right_node2 = insert_right_child_node_bt(first_right_node); // G
 
   // Level 3
   node.data = 6;
