@@ -1,24 +1,29 @@
 #include <stdio.h>
 
-volatile int *stack_function(void){
-    int a;
+int *stack_function(void){
+    int a = 10;
+    int *b;
 
-    a = 10;
-    return &a;
+    b = &a;
+    return b;
 }
 
 int *stack_function2(void){
-	int b = 30;
-    int a = 20;
+	int a = 30;
+    int b = 20;
 	int c = 40;
-    return &a;
+    int *d;
+
+    d = &a;
+    return d;
 }
 
 int main(void) {
     int *a;
 
     a = stack_function();
+    printf("stack_function called: %d\n", *a);
     stack_function2();
-    printf("%d\n", *a);
+    printf("stack_function2 called: %d\n", *a);
     return (0);
 }

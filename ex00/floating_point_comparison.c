@@ -1,13 +1,20 @@
 #include <stdio.h>
 
 int main(void){
-    float f = 0.1;
-    
-    f *= 2;
+    float f;
+    int i;
 
-    if (f == 0.2) {
-        printf("f == 0.2");
+    f = 0;
+    i = 0;
+    while (i < 10) {
+        f += 0.3f;
+        i++;
     }
-    printf("f != 0.2\n");
+    if (f == 3) {
+        printf ("f == 3\n");
+    }
+    else {
+        printf ("f != 3\n");
+    }
     return (0);
 }
