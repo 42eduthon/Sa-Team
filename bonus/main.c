@@ -1,9 +1,8 @@
 #include "bintree.h"
 
-bintree *treeCopy(bintree *tree) { bintree *tree; }
-
-int main(void) {
-  bintree_node node;
+int main(void)
+{
+	bintree_node node;
   bintree_node *first_left_node;
   bintree_node *first_right_node;
 
