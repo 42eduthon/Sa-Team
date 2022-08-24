@@ -7,16 +7,16 @@
 
 typedef struct bintree_node_type
 {
-	char			data;
-	int				visited;
+	char						data;
+	int							visited;
 	struct bintree_node_type	*left_child;
 	struct bintree_node_type	*right_child;
-}					bintree_node;
+}	bintree_node;
 
 typedef struct bintree_type
 {
 	bintree_node	*root_node;
-}					bintree;
+}	bintree;
 
 bintree			*make_bin_tree(bintree_node root_node);
 bintree_node	*get_root_node_bt(bintree *bintree);

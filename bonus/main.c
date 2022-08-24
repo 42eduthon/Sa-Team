@@ -25,16 +25,18 @@ int main(void)
 	node.data = 24;
 	second_right_node = insert_right_child_node_bt(first_left_node, node); // E
 	node.data = 34;
-	second_left_node2 = insert_left_child_node_bt(first_left_node, node); // F
+	second_left_node2 = insert_left_child_node_bt(first_right_node, node); // F
 	node.data = 46;
 	second_right_node2 = insert_right_child_node_bt(first_right_node, node); // G
 	// Level 3
 	node.data = 6;
-	insert_left_child_node_bt(second_left_node, node); // H
+	insert_left_child_node_bt(second_left_node2, node); // H
 	node.data = 14;
-	insert_right_child_node_bt(second_left_node, node); // I
+	insert_right_child_node_bt(second_left_node2, node); // I
 	node.data = 22;
-	insert_left_child_node_bt(second_right_node, node); // J
+	insert_left_child_node_bt(second_right_node2, node); // J
+
+	preorder(tree->root_node);
 	delete_bintree_node(&tree->root_node);
 	delete_bintree(tree);
 	// system("leaks a.out");

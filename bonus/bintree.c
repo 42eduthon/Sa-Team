@@ -7,8 +7,8 @@ bintree	*make_bin_tree(bintree_node root_node)
 
 	tree = calloc(1, sizeof(bintree));
 	p_root_node = calloc(1, sizeof(bintree_node));
-	tree->root_node = p_root_node;
 	*p_root_node = root_node;
+	tree->root_node = p_root_node;
 	return (tree);
 }
 
