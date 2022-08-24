@@ -9,8 +9,8 @@ typedef struct bintree_node_type
 {
 	char			data;
 	int				visited;
-	bintree_node	*left_child;
-	bintree_node	*right_child;
+	struct bintree_node_type	*left_child;
+	struct bintree_node_type	*right_child;
 }					bintree_node;
 
 typedef struct bintree_type
