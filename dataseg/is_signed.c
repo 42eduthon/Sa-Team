@@ -60,7 +60,6 @@ int main(int argc, char **argv) {
     printf("%s\n", "Give me Number\n");
     return 0;
   }
-
   unsigned int n = ft_atoi(argv[1]);
   printf("%u \n", n);
   return 0;
